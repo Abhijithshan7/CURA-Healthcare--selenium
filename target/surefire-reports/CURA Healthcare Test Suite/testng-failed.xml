@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [CURA Healthcare Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.cura.utils.TestListener"/>
+  </listeners>
+  <test thread-count="2" parallel="tests" name="CURA Healthcare Functional Tests(failed)" verbose="0">
+    <classes>
+      <class name="com.cura.tests.CuraHealthcareTests">
+        <methods>
+          <include name="testMenuNavigation"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.cura.tests.CuraHealthcareTests -->
+    </classes>
+  </test> <!-- CURA Healthcare Functional Tests(failed) -->
+</suite> <!-- Failed suite [CURA Healthcare Test Suite] -->

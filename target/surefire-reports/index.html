@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-CURA_Healthcare_Test_Suite" class="navigator-link">
+              <span class="suite-name border-failed">CURA Healthcare Test Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-CURA_Healthcare_Test_Suite" class="navigator-link ">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-CURA_Healthcare_Test_Suite" class="navigator-link ">
+                    <span class="test-stats">3 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-CURA_Healthcare_Test_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-CURA_Healthcare_Test_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-CURA_Healthcare_Test_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-CURA_Healthcare_Test_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-CURA_Healthcare_Test_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">10 methods, 1 failed,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-CURA_Healthcare_Test_Suite" class="hide-methods failed suite-CURA_Healthcare_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-CURA_Healthcare_Test_Suite -->
+                      <a href="#" panel-name="suite-CURA_Healthcare_Test_Suite" class="show-methods failed suite-CURA_Healthcare_Test_Suite"> (show)</a> <!-- show-methods failed suite-CURA_Healthcare_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-CURA_Healthcare_Test_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CURA_Healthcare_Test_Suite" title="com.cura.tests.CuraHealthcareTests" class="method navigator-link" hash-for-method="testMenuNavigation">testMenuNavigation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-CURA_Healthcare_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-CURA_Healthcare_Test_Suite" class="hide-methods passed suite-CURA_Healthcare_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-CURA_Healthcare_Test_Suite -->
+                      <a href="#" panel-name="suite-CURA_Healthcare_Test_Suite" class="show-methods passed suite-CURA_Healthcare_Test_Suite"> (show)</a> <!-- show-methods passed suite-CURA_Healthcare_Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-CURA_Healthcare_Test_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CURA_Healthcare_Test_Suite" title="com.cura.tests.CuraHealthcareTests" class="method navigator-link" hash-for-method="testBookAppointmentWithAllDetails">testBookAppointmentWithAllDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CURA_Healthcare_Test_Suite" title="com.cura.tests.CuraHealthcareTests" class="method navigator-link" hash-for-method="testBookAppointmentWithNoneProgram">testBookAppointmentWithNoneProgram</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CURA_Healthcare_Test_Suite" title="com.cura.tests.CuraHealthcareTests" class="method navigator-link" hash-for-method="testBookAppointmentWithoutReadmission">testBookAppointmentWithoutReadmission</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CURA_Healthcare_Test_Suite" title="com.cura.tests.CuraHealthcareTests" class="method navigator-link" hash-for-method="testEndToEndAppointmentFlow">testEndToEndAppointmentFlow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CURA_Healthcare_Test_Suite" title="com.cura.tests.CuraHealthcareTests" class="method navigator-link" hash-for-method="testHomePageLoad">testHomePageLoad</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CURA_Healthcare_Test_Suite" title="com.cura.tests.CuraHealthcareTests" class="method navigator-link" hash-for-method="testInvalidLogin">testInvalidLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CURA_Healthcare_Test_Suite" title="com.cura.tests.CuraHealthcareTests" class="method navigator-link" hash-for-method="testLogout">testLogout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CURA_Healthcare_Test_Suite" title="com.cura.tests.CuraHealthcareTests" class="method navigator-link" hash-for-method="testNavigateToLogin">testNavigateToLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CURA_Healthcare_Test_Suite" title="com.cura.tests.CuraHealthcareTests" class="method navigator-link" hash-for-method="testValidLogin">testValidLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-CURA_Healthcare_Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-CURA_Healthcare_Test_Suite" class="panel CURA_Healthcare_Test_Suite">
+          <div class="suite-CURA_Healthcare_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.cura.tests.CuraHealthcareTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMenuNavigation">
+                  </a> <!-- testMenuNavigation -->
+                  <span class="method-name">testMenuNavigation</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on linux (9ce1844a70d471f99585b30c14b0065a)] -&gt; xpath: //a[contains(text(),&apos;Login&apos;)]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.14.0-33-generic&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.139, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:42977}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:42977/devtoo..., se:cdpVersion: 131.0.6778.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ce1844a70d471f99585b30c14b0065a
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.cura.pages.HomePage.clickLoginFromMenu(HomePage.java:62)
+	at com.cura.tests.CuraHealthcareTests.testMenuNavigation(CuraHealthcareTests.java:197)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify menu navigation)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CURA_Healthcare_Test_Suite-class-failed -->
+          <div class="suite-CURA_Healthcare_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cura.tests.CuraHealthcareTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBookAppointmentWithAllDetails">
+                  </a> <!-- testBookAppointmentWithAllDetails -->
+                  <span class="method-name">testBookAppointmentWithAllDetails</span>
+                  <em>
+(Verify booking appointment with all details)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBookAppointmentWithNoneProgram">
+                  </a> <!-- testBookAppointmentWithNoneProgram -->
+                  <span class="method-name">testBookAppointmentWithNoneProgram</span>
+                  <em>
+(Verify booking appointment with None healthcare program)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBookAppointmentWithoutReadmission">
+                  </a> <!-- testBookAppointmentWithoutReadmission -->
+                  <span class="method-name">testBookAppointmentWithoutReadmission</span>
+                  <em>
+(Verify booking appointment without readmission)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEndToEndAppointmentFlow">
+                  </a> <!-- testEndToEndAppointmentFlow -->
+                  <span class="method-name">testEndToEndAppointmentFlow</span>
+                  <em>
+(End to end appointment booking flow)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testHomePageLoad">
+                  </a> <!-- testHomePageLoad -->
+                  <span class="method-name">testHomePageLoad</span>
+                  <em>
+(Verify home page loads successfully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidLogin">
+                  </a> <!-- testInvalidLogin -->
+                  <span class="method-name">testInvalidLogin</span>
+                  <em>
+(Verify login with invalid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogout">
+                  </a> <!-- testLogout -->
+                  <span class="method-name">testLogout</span>
+                  <em>
+(Verify logout functionality)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNavigateToLogin">
+                  </a> <!-- testNavigateToLogin -->
+                  <span class="method-name">testNavigateToLogin</span>
+                  <em>
+(Verify navigation to login page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidLogin">
+                  </a> <!-- testValidLogin -->
+                  <span class="method-name">testValidLogin</span>
+                  <em>
+(Verify login with valid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CURA_Healthcare_Test_Suite-class-passed -->
+        </div> <!-- panel CURA_Healthcare_Test_Suite -->
+        <div panel-name="test-xml-CURA_Healthcare_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/home/akshays/eclipse-workspace/Cura_Automation/cura-automation/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;CURA Healthcare Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.cura.utils.TestListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;CURA Healthcare Smoke Tests&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.cura.tests.CuraHealthcareTests&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;testHomePageLoad&quot;/&gt;
+          &lt;include name=&quot;testNavigateToLogin&quot;/&gt;
+          &lt;include name=&quot;testValidLogin&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.cura.tests.CuraHealthcareTests --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- CURA Healthcare Smoke Tests --&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;CURA Healthcare Functional Tests&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.cura.tests.CuraHealthcareTests&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;testInvalidLogin&quot;/&gt;
+          &lt;include name=&quot;testBookAppointmentWithAllDetails&quot;/&gt;
+          &lt;include name=&quot;testBookAppointmentWithoutReadmission&quot;/&gt;
+          &lt;include name=&quot;testBookAppointmentWithNoneProgram&quot;/&gt;
+          &lt;include name=&quot;testLogout&quot;/&gt;
+          &lt;include name=&quot;testMenuNavigation&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.cura.tests.CuraHealthcareTests --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- CURA Healthcare Functional Tests --&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;CURA Healthcare End to End Test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.cura.tests.CuraHealthcareTests&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;testEndToEndAppointmentFlow&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.cura.tests.CuraHealthcareTests --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- CURA Healthcare End to End Test --&gt;
+&lt;/suite&gt; &lt;!-- CURA Healthcare Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-CURA_Healthcare_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for CURA Healthcare Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">CURA Healthcare Smoke Tests (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">CURA Healthcare Functional Tests (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">CURA Healthcare End to End Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-CURA_Healthcare_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for CURA Healthcare Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-CURA_Healthcare_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for CURA Healthcare Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_CURA_Healthcare_Test_Suite');
+function tableData_CURA_Healthcare_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(10);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testMenuNavigation')
+data.setCell(0, 2, 'com.cura.tests.CuraHealthcareTests')
+data.setCell(0, 3, 11387);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testEndToEndAppointmentFlow')
+data.setCell(1, 2, 'com.cura.tests.CuraHealthcareTests')
+data.setCell(1, 3, 3964);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testBookAppointmentWithNoneProgram')
+data.setCell(2, 2, 'com.cura.tests.CuraHealthcareTests')
+data.setCell(2, 3, 3562);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testLogout')
+data.setCell(3, 2, 'com.cura.tests.CuraHealthcareTests')
+data.setCell(3, 3, 3365);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testBookAppointmentWithAllDetails')
+data.setCell(4, 2, 'com.cura.tests.CuraHealthcareTests')
+data.setCell(4, 3, 3324);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testBookAppointmentWithoutReadmission')
+data.setCell(5, 2, 'com.cura.tests.CuraHealthcareTests')
+data.setCell(5, 3, 2969);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testInvalidLogin')
+data.setCell(6, 2, 'com.cura.tests.CuraHealthcareTests')
+data.setCell(6, 3, 2080);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testValidLogin')
+data.setCell(7, 2, 'com.cura.tests.CuraHealthcareTests')
+data.setCell(7, 3, 1688);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testNavigateToLogin')
+data.setCell(8, 2, 'com.cura.tests.CuraHealthcareTests')
+data.setCell(8, 3, 738);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testHomePageLoad')
+data.setCell(9, 2, 'com.cura.tests.CuraHealthcareTests')
+data.setCell(9, 3, 87);
+window.suiteTableData['CURA_Healthcare_Test_Suite']= { tableData: data, tableDiv: 'times-div-CURA_Healthcare_Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 55 seconds</span>
+              <div id="times-div-CURA_Healthcare_Test_Suite">
+              </div> <!-- times-div-CURA_Healthcare_Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-CURA_Healthcare_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for CURA Healthcare Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-CURA_Healthcare_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">20 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.cura.tests.CuraHealthcareTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testValidLogin</span>
+                <br/>
+                <span class="ignored-method-name">testMenuNavigation</span>
+                <br/>
+                <span class="ignored-method-name">testInvalidLogin</span>
+                <br/>
+                <span class="ignored-method-name">testBookAppointmentWithAllDetails</span>
+                <br/>
+                <span class="ignored-method-name">testValidLogin</span>
+                <br/>
+                <span class="ignored-method-name">testBookAppointmentWithoutReadmission</span>
+                <br/>
+                <span class="ignored-method-name">testNavigateToLogin</span>
+                <br/>
+                <span class="ignored-method-name">testBookAppointmentWithNoneProgram</span>
+                <br/>
+                <span class="ignored-method-name">testHomePageLoad</span>
+                <br/>
+                <span class="ignored-method-name">testHomePageLoad</span>
+                <br/>
+                <span class="ignored-method-name">testBookAppointmentWithAllDetails</span>
+                <br/>
+                <span class="ignored-method-name">testLogout</span>
+                <br/>
+                <span class="ignored-method-name">testEndToEndAppointmentFlow</span>
+                <br/>
+                <span class="ignored-method-name">testNavigateToLogin</span>
+                <br/>
+                <span class="ignored-method-name">testEndToEndAppointmentFlow</span>
+                <br/>
+                <span class="ignored-method-name">testInvalidLogin</span>
+                <br/>
+                <span class="ignored-method-name">testMenuNavigation</span>
+                <br/>
+                <span class="ignored-method-name">testBookAppointmentWithoutReadmission</span>
+                <br/>
+                <span class="ignored-method-name">testLogout</span>
+                <br/>
+                <span class="ignored-method-name">testBookAppointmentWithNoneProgram</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-CURA_Healthcare_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cura.tests.CuraHealthcareTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testInvalidLogin</span>
+                <span class="method-start">5835 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testHomePageLoad</span>
+                <span class="method-start">6566 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">6656 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">6768 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">7916 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">8011 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testNavigateToLogin</span>
+                <span class="method-start">11320 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">12059 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">12154 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testBookAppointmentWithAllDetails</span>
+                <span class="method-start">12650 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">15974 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">16067 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testValidLogin</span>
+                <span class="method-start">20291 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testBookAppointmentWithoutReadmission</span>
+                <span class="method-start">20746 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">21980 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">22091 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">23716 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">23812 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testBookAppointmentWithNoneProgram</span>
+                <span class="method-start">28089 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testEndToEndAppointmentFlow</span>
+                <span class="method-start">28260 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">31651 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">31749 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">32225 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testLogout</span>
+                <span class="method-start">35588 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">38953 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">39055 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testMenuNavigation</span>
+                <span class="method-start">42999 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">54842 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

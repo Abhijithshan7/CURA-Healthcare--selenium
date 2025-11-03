@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="CURA Healthcare Test Suite" verbose="1" parallel="tests" thread-count="2">
+    
+    <listeners>
+        <listener class-name="com.cura.utils.TestListener"/>
+    </listeners>
+    
+    <parameter name="browser" value="chrome"/>
+    
+    <test name="CURA Healthcare Smoke Tests">
+        <classes>
+            <class name="com.cura.tests.CuraHealthcareTests">
+                <methods>
+                    <include name="testHomePageLoad"/>
+                    <include name="testNavigateToLogin"/>
+                    <include name="testValidLogin"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+    <test name="CURA Healthcare Functional Tests">
+        <classes>
+            <class name="com.cura.tests.CuraHealthcareTests">
+                <methods>
+                    <include name="testInvalidLogin"/>
+                    <include name="testBookAppointmentWithAllDetails"/>
+                    <include name="testBookAppointmentWithoutReadmission"/>
+                    <include name="testBookAppointmentWithNoneProgram"/>
+                    <include name="testLogout"/>
+                    <include name="testMenuNavigation"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+    <test name="CURA Healthcare End to End Test">
+        <classes>
+            <class name="com.cura.tests.CuraHealthcareTests">
+                <methods>
+                    <include name="testEndToEndAppointmentFlow"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+</suite>

@@ -1,0 +1,9 @@
+/home/akshays/eclipse-workspace/Cura_Automation/cura-automation/src/main/java/com/cura/pages/LoginPage.java
+/home/akshays/eclipse-workspace/Cura_Automation/cura-automation/src/main/java/com/cura/utils/WaitUtil.java
+/home/akshays/eclipse-workspace/Cura_Automation/cura-automation/src/main/java/com/cura/utils/TestUtil.java
+/home/akshays/eclipse-workspace/Cura_Automation/cura-automation/src/main/java/com/cura/pages/AppointmentPage.java
+/home/akshays/eclipse-workspace/Cura_Automation/cura-automation/src/main/java/com/cura/utils/TestListener.java
+/home/akshays/eclipse-workspace/Cura_Automation/cura-automation/src/main/java/com/cura/utils/ScreenshotUtil.java
+/home/akshays/eclipse-workspace/Cura_Automation/cura-automation/src/main/java/com/cura/pages/HomePage.java
+/home/akshays/eclipse-workspace/Cura_Automation/cura-automation/src/main/java/com/cura/pages/AppointmentConfirmationPage.java
+/home/akshays/eclipse-workspace/Cura_Automation/cura-automation/src/main/java/com/cura/base/BaseTest.java
